@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	height: 100vh;
+	margin: 0;
+	background-color: beige;
+}
+
+img {
+	max-width: 600px;
+	max-height: 450px;
+	border-radius: 30px;
+	box-shadow: 0 0 15px orange;
+}
+
+main {
+	text-align: center;
+}
+.info{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	justify-content: space-between;
+}
+.info:first-child{
+	margin-left: 0.5rem;
+}
+.info:last-child{
+	margin-right: 0.5rem;
+}
+span{
+	color: orangered;
+}
+
+button {
+	border: 0;
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding: 16px;
+	background: orangered;
+	border-radius: 30px;
+	color: white;
+	margin: 20px 0;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+	background: orange;
+}
+@media screen and (max-width: 630px){
+	img {
+		max-width: 400px;
+		max-height: 250px;
+	}
+}
+@media screen and (max-width: 415px){
+	img {
+		max-width: 300px;
+		max-height: 150px;
+	}
+}
+@media screen and (max-width: 350px){
+	.info{
+		flex-direction: column;
+		gap:0;
+		align-items: center;
+		padding: 0;
+	}
+	.info h4{
+		margin: 0.2rem 0;
+	}
+	.info .last{
+		margin-bottom: 0.5rem;
+	}
+}
